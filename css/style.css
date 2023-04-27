@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&family=Rubik&family=Smooch&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Anek Malayalam", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  height: 100vh;
+}
+.bg-image {
+  background-image: url(../img/bellpepper_restaurant.jpg);
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.btn-wrapper,
+.footer {
+  padding: 20px;
+}
+.btns {
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: 5px 15px;
+  margin: 10px auto;
+}
+.btns:hover {
+  background-color: white;
+  color: black;
+}
+.logo > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* how this code works? */
+  font-size: 4em;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer > div {
+  margin: 20px auto;
+  font-size: 1.5em;
+}
+#menu,
+#contact {
+  height: 90%;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+#contact {
+  height: auto;
+  background-color: white;
+}
+#close {
+  float: right;
+  cursor: pointer;
+  background-color: black;
+  font-size: 1.5em;
+  line-height: 0;
+  padding: 20px;
+  border: none;
+}
+#close:hover {
+  background-color: white;
+  color: black;
+}
+.menu-headings > p,
+.contact-heading > p {
+  font-size: 2.75em;
+  padding: 15px;
+  background-color: black;
+}
+.menu-items {
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+  padding: 6px;
+}
+.form {
+  background-color: white;
+}
+.form > p {
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+.form-css {
+  display: block;
+  margin: auto auto;
+  color: black;
+  padding: 10px;
+  width: 95%;
+  font-size: 1.5em;
+}
+#msg {
+  resize: none;
+}
+#send-msg {
+  cursor: pointer;
+  border: none;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+#send-msg:hover {
+  background-color: rgba(128, 128, 128, 0.514);
+}
+

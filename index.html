@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <title>BellPepper Restraunt</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-image">
+            <div class="btn-wrapper">
+                <p>
+                    <button class="btns" onclick="openMenu()">menu</button>
+                </p>
+                <p>
+                    <button class="btns" onclick="openContact()">contact</button>
+                </p>
+            </div>
+            <div class="logo">
+                <h1>BellPepper Restraunt</h1>
+            </div>
+            <div class="footer">
+                <div class="time">monday - friday , 10-23 | <span id="date">OPEN</span></div>
+                <div class="address">221B Baker Street, Bandra</div>
+                <div class="owner">
+                    <p>&copy; | 2002 - <span id="incr-year"></span> | Owned by Kaustubh Corporation</p>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <button id="close" onclick="closeMenu()">x</button>
+            <div class="menu-headings">
+                <p>Starters</p>
+            </div>
+            <div class="menu-items">Tomato Soup</div>
+            <div class="menu-items">Sabudana Tikki</div>
+            <div class="menu-items">Bread and Butter/ Jam/ Chocolate</div>
+            <div class="menu-items">Paneer 65</div>
+            <div class="menu-items">Momos</div>
+
+            <div class="menu-headings">
+                <p>Main Courses</p>
+            </div>
+            <div class="menu-items">Grilled Fish and Potataoes</div>
+            <div class="menu-items">Italian Pizza</div>
+            <div class="menu-items">Vegie Pasta</div>
+            <div class="menu-items">Chicken and Poataoes</div>
+            <div class="menu-items">Deluxe Burger</div>
+
+            <div class="menu-headings">
+                <p>Desserts</p>
+            </div>
+            <div class="menu-items">Fruit Salad</div>
+            <div class="menu-items">Ice-cream</div>
+            <div class="menu-items">Chocolate Cake</div>
+            <div class="menu-items">Mousse</div>
+            <div class="menu-items">Cookies and Cream</div>
+        </div>
+        <div id="contact">
+            <button id="close" onclick="closeContact()">x</button>
+            <div class="contact-heading">
+                <p>Contact</p>
+            </div>
+            <form action="post" class="form">
+                <p>Reserve a table, ask for today's special or just send us a message:</p>
+                <label for="name"></label><br>
+                <input type="text" name="name" class="form-css" id="name" placeholder="Name">
+                <label for="num-of-people"></label><br>
+                <input type="number" name="num-of-people" class="form-css" id="num-of-people"
+                    placeholder="How many people?">
+                <label for="date"></label><br>
+                <input type="datetime-local" name="date" class="form-css" id="date">
+                <label for="msg"></label><br>
+                <textarea name="msg" class="form-css" id="msg" rows="2"
+                    placeholder="Message / Special Requirement"></textarea>
+                <input type="button" value="Send Message" class="form-css" id="send-msg">
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="js/style.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+/* scroll-bar */
+::-webkit-scrollbar {
+    width: 0;
+  }
+  /* for reponsiveness */
+  @media screen and (max-width: 600px) {
+    #contact,
+    #menu {
+      height: 100%;
+      width: 100%;
+    }
+  }
